@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Right_Player : MonoBehaviour
 {
-    public Rigidbody2D rigidbody;
+    public new Rigidbody2D rigidbody;
     public float speed;
     
     void Start()

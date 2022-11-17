@@ -1,0 +1,69 @@
+{
+    "AI_Left_Player": {
+        "checkpoints": [
+            {
+                "steps": 499968,
+                "file_path": "results\\Test2\\AI_Left_Player\\AI_Left_Player-499968.onnx",
+                "reward": null,
+                "creation_time": 1668173918.405113,
+                "auxillary_file_paths": [
+                    "results\\Test2\\AI_Left_Player\\AI_Left_Player-499968.pt"
+                ]
+            },
+            {
+                "steps": 500736,
+                "file_path": "results\\Test2\\AI_Left_Player\\AI_Left_Player-500736.onnx",
+                "reward": null,
+                "creation_time": 1668173918.7339761,
+                "auxillary_file_paths": [
+                    "results\\Test2\\AI_Left_Player\\AI_Left_Player-500736.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 500736,
+            "file_path": "results\\Test2\\AI_Left_Player.onnx",
+            "reward": null,
+            "creation_time": 1668173918.7339761,
+            "auxillary_file_paths": [
+                "results\\Test2\\AI_Left_Player\\AI_Left_Player-500736.pt"
+            ]
+        }
+    },
+    "AI_Right_Player": {
+        "checkpoints": [
+            {
+                "steps": 499968,
+                "file_path": "results\\Test2\\AI_Right_Player\\AI_Right_Player-499968.onnx",
+                "reward": null,
+                "creation_time": 1668173918.616115,
+                "auxillary_file_paths": [
+                    "results\\Test2\\AI_Right_Player\\AI_Right_Player-499968.pt"
+                ]
+            },
+            {
+                "steps": 500736,
+                "file_path": "results\\Test2\\AI_Right_Player\\AI_Right_Player-500736.onnx",
+                "reward": null,
+                "creation_time": 1668173918.788975,
+                "auxillary_file_paths": [
+                    "results\\Test2\\AI_Right_Player\\AI_Right_Player-500736.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 500736,
+            "file_path": "results\\Test2\\AI_Right_Player.onnx",
+            "reward": null,
+            "creation_time": 1668173918.788975,
+            "auxillary_file_paths": [
+                "results\\Test2\\AI_Right_Player\\AI_Right_Player-500736.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.28.0",
+        "torch_version": "1.7.1+cu110"
+    }
+}

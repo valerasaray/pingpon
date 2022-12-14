@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Unity.MLAgents;
 
 public class Ball : MonoBehaviour
 {
@@ -16,8 +17,7 @@ public class Ball : MonoBehaviour
 
     public int counter = 0;
 
-    // public AI_Left ai_left;
-    // public AI_Right ai_right;
+    public Agent agent;
 
     void Start()
     {
@@ -43,7 +43,6 @@ public class Ball : MonoBehaviour
         if (collision.gameObject.CompareTag("Wall"))
         {
             counter++;
-            // Debug.Log(counter);
             if (counter == 7) {
                 this.transform.position = startPos;
                 direction -= new Vector2(Random.Range(0.5f, 1f) + 10, Random.Range(0.5f, 1f) + 10);
@@ -61,8 +60,6 @@ public class Ball : MonoBehaviour
             direction += new Vector2(Random.Range(0.5f, 1f), Random.Range(0.5f, 1f));
             direction.x = -direction.x;
             speed = speed - coefficientSpeed;
-
-            // ai_right.Punishment();
         }
 
         if  (collision.gameObject.name == "Left Border")
@@ -73,8 +70,34 @@ public class Ball : MonoBehaviour
             direction += new Vector2(Random.Range(0.5f, 1f), Random.Range(0.5f, 1f));
             direction.x = -direction.x;
             speed = speed - coefficientSpeed;
+        }
 
-            // ai_left.Punishment();
+        // if (collision.gameObject.name == "Left_Player")
+        // {
+        //     Debug.Log("+1 left ball");
+        //     agent.SetReward(+1f);
+        //     agent.EndEpisode();
+        // }
+
+        // if (collision.gameObject.name == "Left Border")
+        // {
+        //     Debug.Log("-1 left ball");
+        //     agent.SetReward(-1f);
+        //     agent.EndEpisode();
+        // }
+
+        if (collision.gameObject.name == "Right_Player")
+        {
+            Debug.Log("+1 left ball");
+            agent.SetReward(+1f);
+            agent.EndEpisode();
+        }
+
+        if (collision.gameObject.name == "Right Border")
+        {
+            Debug.Log("-1 left ball");
+            agent.SetReward(-1f);
+            agent.EndEpisode();
         }
     }
 }

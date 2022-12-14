@@ -418,7 +418,7 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 1
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 0}
+  m_Model: {fileID: 5022602860645237092, guid: efb4ebfe2f8bbe34fb6af2f363d88e1a, type: 3}
   m_InferenceDevice: 1
   m_BehaviorType: 0
   m_BehaviorName: AI_Left_Player
@@ -449,7 +449,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 427667309}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 50dd4ebcff4a1134398dbab92ae84856, type: 3}
   m_Name: 
@@ -991,7 +991,7 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 1
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 0}
+  m_Model: {fileID: 5022602860645237092, guid: c2592e33d1580664dad2c507ee0317c0, type: 3}
   m_InferenceDevice: 1
   m_BehaviorType: 0
   m_BehaviorName: AI_Right_Player
@@ -1234,7 +1234,7 @@ MonoBehaviour:
   scoreManager: {fileID: 1477951048}
   startPos: {x: 0, y: 0}
   counter: 0
-  agent: {fileID: 427667319}
+  agent: {fileID: 0}
 --- !u!50 &1185912161
 Rigidbody2D:
   serializedVersion: 4
@@ -2070,7 +2070,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 5
   m_TargetDisplay: 0
 --- !u!224 &1924769363
 RectTransform:

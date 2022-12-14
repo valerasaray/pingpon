@@ -72,6 +72,20 @@ public class Ball : MonoBehaviour
             speed = speed - coefficientSpeed;
         }
 
+        // if (collision.gameObject.name == "Right_Player")
+        // {
+        //     Debug.Log("+1 ball");
+        //     agent.SetReward(+1f);
+        //     agent.EndEpisode();
+        // }
+
+        // if (collision.gameObject.name == "Right Border")
+        // {
+        //     Debug.Log("-1 ball");
+        //     agent.SetReward(-1f);
+        //     agent.EndEpisode();
+        // }
+
         // if (collision.gameObject.name == "Left_Player")
         // {
         //     Debug.Log("+1 left ball");
@@ -85,19 +99,5 @@ public class Ball : MonoBehaviour
         //     agent.SetReward(-1f);
         //     agent.EndEpisode();
         // }
-
-        if (collision.gameObject.name == "Right_Player")
-        {
-            Debug.Log("+1 left ball");
-            agent.SetReward(+1f);
-            agent.EndEpisode();
-        }
-
-        if (collision.gameObject.name == "Right Border")
-        {
-            Debug.Log("-1 left ball");
-            agent.SetReward(-1f);
-            agent.EndEpisode();
-        }
     }
 }

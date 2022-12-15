@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Left_Player : MonoBehaviour
+public class Left_Player : MonoBehaviour // MonoBehaviour — это базовый класс, от которого по умолчанию наследуется каждый скрипт Unity
 {
-    public new Rigidbody2D rigidbody;
+    public new Rigidbody2D rigidbody; // Создаём объект твёрдого тела
     public float speed;
     
     void Start()
@@ -12,19 +12,19 @@ public class Left_Player : MonoBehaviour
         
     }
 
-    void Update()
+    void Update() //  Update вызывается перед визуализацией кадра, а также перед вычислением анимации.
     {
-        Vector2 direction = Vector2.zero;
+        Vector2 direction = Vector2.zero; // Создаём переменную направление типа Vector2
 
-        if (Input.GetKey(KeyCode.W))
+        if (Input.GetKey(KeyCode.W)) // При нажатии кнопки "W" объект Right_Player двигается вверх
         {
             direction = Vector2.up;
         }
 
-        if (Input.GetKey(KeyCode.S))
+        if (Input.GetKey(KeyCode.S)) // При нажатии кнопки "S" объект Right_Player двигается вниз
         {
             direction = Vector2.down;
         }
-        rigidbody.velocity = direction * speed;
+        rigidbody.velocity = direction * speed; // velocity - вектор скорости жесткого тела. Он представляет скорость изменения положения жесткого тела.
     }
 }

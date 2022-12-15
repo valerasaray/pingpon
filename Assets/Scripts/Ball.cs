@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Unity.MLAgents;
 
-public class Ball : MonoBehaviour
+public class Ball : MonoBehaviour // MonoBehaviour — это базовый класс, от которого по умолчанию наследуется каждый скрипт Unity
 {
     public new Rigidbody2D rigidbody;
     public Vector2 direction;

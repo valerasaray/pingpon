@@ -5,21 +5,23 @@ using Unity.MLAgents;
 using Unity.MLAgents.Actuators;
 using Unity.MLAgents.Sensors;
 
-public class AI_Right : Agent
+public class AI_Right : Agent // Класс Agent расширяет класс MonoBehaviour Unity. Agent нужен для ML Agents.
 {
-    [SerializeField] private Transform targetTransform;
+    //  SerializeField атрибут используется, когда вам нужно, чтобы ваша переменная была private, но также хотите, чтобы она отображалась в редакторе.
+    [SerializeField] private Transform targetTransform; // Создаем объект для управления положением объекта.
 
-    public override void CollectObservations(VectorSensor sensor)
+    // override переопределяет метод наследуемого класса
+    public override void CollectObservations(VectorSensor sensor) // Собирате наблюдения
     {
-        sensor.AddObservation(transform.position);
-        sensor.AddObservation(targetTransform.position);
+        sensor.AddObservation(transform.position); // Добавляем наблюдение о позиции ракетки
+        sensor.AddObservation(targetTransform.position); // Добавляем наблюдение о позиции нашей цели, то есть мячика
     }
 
-    public override void OnActionReceived(ActionBuffers actions)
+    public override void OnActionReceived(ActionBuffers actions) // Получает буфер с нашими действиями 
     {  
-        float moveY = actions.ContinuousActions[0];
+        float moveY = actions.ContinuousActions[0]; // создаём переменную перемещения по Y
 
-        float moveSpeed = 8f;
-        transform.position += new Vector3(0.0f, moveY, 0.0f) * Time.deltaTime * moveSpeed;
+        float moveSpeed = 8f; // Скорость ракетки
+        transform.position += new Vector3(0.0f, moveY, 0.0f) * Time.deltaTime * moveSpeed; // Изменим позицию ракетки
     }
 }

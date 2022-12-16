@@ -23,6 +23,8 @@ ml-agents.
 
 ## Для запуска игры откройте папку Game и заустите PingPong.exe
 
+![IMG_20221216_112744](https://user-images.githubusercontent.com/86799725/208058339-dd724cb5-b6e2-4c4c-917c-d60fe37d8ce3.jpg)
+
 ![Untitled (2)](https://user-images.githubusercontent.com/55214180/207999396-55025c2a-c4ad-4807-bbc3-afa467861ab1.jpg)
 
 ![Untitled (1)](https://user-images.githubusercontent.com/55214180/207999400-79d7d8e7-ae42-4e85-8633-e5b69a98bfe9.jpg)
